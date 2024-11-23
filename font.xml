@@ -1,0 +1,40 @@
+<theme>
+
+    <variables>
+        <primaryFont>./core/fonts/pixel-sans.ttf</primaryFont>
+        <secondaryFont>./core/fonts/exo.otf</secondaryFont>
+        <altFont>./core/fonts/upheavtt.ttf</altFont>
+
+    </variables>
+
+        <fontSize name="medium">
+            <variables>
+                <sysdesc>0.045</sysdesc>
+                <textlist>0.055</textlist>
+                <help>0.03</help>
+                <fave>0.05</fave>
+                <grid>0.12 0.135</grid>
+            </variables>
+        </fontSize>
+
+        <fontSize name="large">
+            <variables>
+                <sysdesc>0.055</sysdesc>
+                <textlist>0.06</textlist>
+                <help>0.0375</help>
+                <fave>0.06</fave>
+                <grid>0.18 0.135</grid>
+            </variables>
+        </fontSize>
+        <fontSize name="x-large">
+            <variables>
+                
+                <sysdesc>0.065</sysdesc>
+                <textlist>0.065</textlist>
+                <help>0.045</help>
+                <fave>0.06</fave>
+                <grid>0.18 0.163</grid>
+            </variables>
+        </fontSize>
+
+</theme>

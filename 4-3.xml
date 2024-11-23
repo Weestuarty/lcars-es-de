@@ -1,0 +1,114 @@
+<theme>
+    <variables>
+       
+    </variables>
+    <variant name="textlist">
+        <view name="system">
+            <text name="fave">
+                <pos>0.52 0.18</pos>
+                <origin>0.5 0.5</origin>
+                <size>0.15 0.21</size>
+                <horizontalAlignment>left</horizontalAlignment>
+                <verticalAlignment>top</verticalAlignment>
+                <text>Favorite Games</text>
+                <lineSpacing>0.9</lineSpacing>
+                <fontPath>./huc.otf</fontPath>
+                <fontSize>0.075</fontSize>
+                <color>000000</color>
+            </text>
+        
+        </view>
+    </variant>
+    <variant name="all">
+        <view name="gamelist">
+            <rating name="rating">
+                <pos>0.44 0.52</pos>
+                <origin>0 0</origin>
+                <size>0.165 0</size>
+                <color>${color3}</color>
+                <filledPath>./starfleet.svg</filledPath>
+                <unfilledPath>./starfleetfill.svg</unfilledPath>
+            </rating>
+            <text name="count">
+                <pos>0.4075 0.837</pos>
+                <origin>0.5 0.5</origin>
+                <size>0.0475 0.155</size>
+                <horizontalAlignment>center</horizontalAlignment>
+                <verticalAlignment>top</verticalAlignment>
+                <text>
+                    Plays</text>
+                <backgroundColor>${color2}</backgroundColor>
+                <lineSpacing>0.65</lineSpacing>
+                <fontPath>./huc.otf</fontPath>
+                <fontSize>0.045</fontSize>
+                <color>000000</color>
+            </text>
+            <datetime name="syscountfav">
+                <pos>0.4075 0.72</pos>
+                <origin>0.5 0.5</origin>
+                <size>0.0475 0.09</size>
+                <horizontalAlignment>center</horizontalAlignment>
+                <verticalAlignment>center</verticalAlignment>
+                <metadata>releasedate</metadata>
+                <defaultValue>:space:</defaultValue>
+                <format>%Y</format>
+                <lineSpacing>1</lineSpacing>
+                <fontPath>./huc.otf</fontPath>
+                <fontSize>0.04</fontSize>
+                <color>000000</color>
+            </datetime>
+            <badges name="badges-cont">
+                <pos>0.4075 0.1875</pos>
+                
+            </badges>
+            <badges name="badges-fave">
+                <pos>0.4075 0.2675</pos>
+             
+            </badges>
+            <badges name="badges-comp">
+                <pos>0.4075 0.3445</pos>
+                
+            </badges>
+            <badges name="badges-man">
+                <pos>0.4075 0.423</pos>
+                
+            </badges>
+            <badges name="badges-kidgame">
+                <pos>0.4075 0.501</pos>
+               
+            </badges>
+            <badges name="badges-alt">
+                <pos>0.4075 0.58</pos>
+                
+            </badges>
+            <badges name="badges-broken">
+                <pos>0.4075 0.659</pos>
+               
+            </badges>
+        </view>    
+     </variant>
+
+     <variant name="grid">
+        <view name="system">
+            <text name="fave">
+                <pos>0.52 0.18</pos>
+                <origin>0.5 0.5</origin>
+                <size>0.15 0.21</size>
+                <horizontalAlignment>left</horizontalAlignment>
+                <verticalAlignment>top</verticalAlignment>
+                <text>Favorite Games</text>
+                <lineSpacing>0.9</lineSpacing>
+                <fontPath>./huc.otf</fontPath>
+                <fontSize>0.075</fontSize>
+                <color>000000</color>
+            </text>
+        
+        </view>
+        <view name="gamelist">
+
+        
+        </view>     
+     </variant>
+    
+        
+</theme>

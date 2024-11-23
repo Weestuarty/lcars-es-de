@@ -1,0 +1,40 @@
+<theme>
+    
+    <colorScheme name="tng">
+        <variables>
+            <color1>ed884c</color1>
+            <color2>9999FF</color2>
+            <color3>4455bb</color3>
+            <color4>774466</color4>
+            <text>000000</text> 
+        </variables>
+    </colorScheme>
+    <colorScheme name="grey">
+        <variables>
+            <color1>778899</color1>
+            <color2>898989</color2>
+            <color3>4c5762</color3>
+            <color4>c5c5c5</color4>
+            <text>000000</text> 
+        </variables>
+    </colorScheme>
+    <colorScheme name="ent">
+        <variables>
+            <color1>DF0000</color1>
+            <color2>F2C300</color2>
+            <color3>0099F6</color3>
+            <color4>00B844</color4>
+            <text>000000</text> 
+        </variables>
+    </colorScheme>
+    <colorScheme name="system">
+        <variables>
+            <color1>${systemColorPalette1}</color1>
+            <color2>${systemColorPalette2}</color2>
+            <color3>${systemColorPalette3}</color3>
+            <color4>${systemColorPalette4}</color4>
+            <text>000000</text> 
+        </variables>
+    </colorScheme>
+    
+</theme>

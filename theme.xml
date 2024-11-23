@@ -1,0 +1,749 @@
+<theme>
+    <include>./system/metadata/_default.xml</include>
+    <include>./system/metadata/${system.theme}.xml</include>
+    <include>./system/custom/metadata/${system.theme}.xml</include>
+    <include>./system/coversize/${systemCoverSize}.xml</include>
+    <include>./colors.xml</include>
+    <include>./font.xml</include>
+    <include>./languages.xml</include>
+
+    <aspectRatio name="4:3">
+        <include>./4-3.xml</include>
+    </aspectRatio>
+
+
+    <view name="system, gamelist">
+        <image name="background">
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./space.webp</path>
+            <color>000000</color>
+            <zIndex>0</zIndex>
+        </image>
+        <helpsystem name="help">
+            <pos>.95 0.98</pos>
+            <origin>1 0.5</origin>
+            <fontSize>${help}</fontSize>
+            <fontPath>./huc.otf</fontPath>
+            <textColor>000000</textColor>
+            <iconColor>000000</iconColor>
+        </helpsystem>
+    </view>
+    <view name="system">
+        <gameselector name="system">
+            <selection>favorite</selection>
+            <gameCount>10</gameCount>
+            <allowDuplicates>true</allowDuplicates>
+        </gameselector>
+        <text name="short">
+            <pos>0.98 0.3525</pos>
+            <origin>1 0.5</origin>
+            <size>0.09 0.05</size>
+            <horizontalAlignment>center</horizontalAlignment>
+            <verticalAlignment>top</verticalAlignment>
+            <systemdata>name</systemdata>
+            <lineSpacing>1</lineSpacing>
+            <fontPath>./huc.otf</fontPath>
+            <letterCase>lowercase</letterCase>
+            <fontSize>0.035</fontSize>
+            <color>${color2}</color>
+            <zIndex>5</zIndex>
+        </text>
+        <text name="gamecount">
+            <pos>0.0175 0.9875</pos>
+            <origin>0 0.5</origin>
+            <size>0.08 0.05</size>
+            <horizontalAlignment>center</horizontalAlignment>
+            <verticalAlignment>top</verticalAlignment>
+            <systemdata>gamecountGames</systemdata>
+            <lineSpacing>1</lineSpacing>
+            <fontPath>./huc.otf</fontPath>
+            <letterCase>lowercase</letterCase>
+            <fontSize>0.035</fontSize>
+            <color>${color2}</color>
+            <zIndex>5</zIndex>
+        </text>
+        <text name="gamecountfave">
+            <pos>0.895 0.025</pos>
+            <origin>0 0.5</origin>
+            <size>0.08 0.05</size>
+            <horizontalAlignment>center</horizontalAlignment>
+            <verticalAlignment>top</verticalAlignment>
+            <systemdata>gamecountFavorites</systemdata>
+            <lineSpacing>1</lineSpacing>
+            <fontPath>./huc.otf</fontPath>
+            <letterCase>lowercase</letterCase>
+            <fontSize>0.035</fontSize>
+            <color>${color2}</color>
+            <zIndex>50</zIndex>
+        </text>
+        <text name="description">
+            <pos>0.805 0.67</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.375 0.59</size>
+            <horizontalAlignment>center</horizontalAlignment>
+            <verticalAlignment>center</verticalAlignment>
+            <text>${systemDescription}</text>
+            <container>true</container>
+            <lineSpacing>1</lineSpacing>
+            <fontPath>./huc.otf</fontPath>
+            <fontSize>${sysdesc}</fontSize>
+            <color>${color2}</color>
+        </text>
+        <image name="systemlogo3">
+            <pos>0.156 0.045</pos>
+            <origin>0.5 0.5</origin>
+            <maxSize>0.25 0.08</maxSize>
+            <path>./system/logos/system-logo-white/${system.theme}.svg</path>
+            <default>./system/custom/logo/${system.theme}.svg</default>
+            <color>${color3}</color>
+            <zIndex>8</zIndex>
+        </image>
+        <image name="background1">
+            <pos>-.01 0</pos>
+            <size>1.02 1</size>
+            <path>./lcars5.svg</path>
+            <color>${color1}</color>
+            <zIndex>3</zIndex>
+        </image>
+        <image name="background2">
+            <pos>-.01 0</pos>
+            <size>1.02 1</size>
+            <path>./lcars2.svg</path>
+            <color>${color2}</color>
+            <zIndex>3</zIndex>
+        </image>
+        <image name="background3">
+            <pos>-.01 0</pos>
+            <size>1.02 1</size>
+            <path>./lcars3.svg</path>
+            <color>${color3}</color>
+            <zIndex>3</zIndex>
+        </image>
+        <image name="background4">
+            <pos>-.01 0</pos>
+            <size>1.02 1</size>
+            <path>./lcars4.svg</path>
+            <color>${color4}</color>
+            <zIndex>3</zIndex>
+        </image>
+        
+        <image name="backgroundlayer">
+            <pos>0.3825 0</pos>
+            <size>0.625 1</size>
+            <path>./space.webp</path>
+            <color>000000</color>
+            <zIndex>2</zIndex>
+        </image>
+        <!--<text name="sysname">
+            <pos>0.82 0.8575</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.27 0.15</size>
+            <horizontalAlignment>center</horizontalAlignment>
+            <verticalAlignment>center</verticalAlignment>
+            <text>${systemReleaseYear}</text>
+            <lineSpacing>1</lineSpacing>
+            <color>FFFFFF</color>
+        </text>
+        <text name="syscount">
+            <pos>0.82 0.58</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.28 0.15</size>
+            <horizontalAlignment>center</horizontalAlignment>
+            <verticalAlignment>center</verticalAlignment>
+            <systemdata>gamecountGames</systemdata>
+            <lineSpacing>1</lineSpacing>
+            <color>FFFFFF</color>
+        </text>
+        <text name="syscountfav">
+            <pos>0.82 0.66</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.28 0.15</size>
+            <horizontalAlignment>center</horizontalAlignment>
+            <verticalAlignment>center</verticalAlignment>
+            <systemdata>gamecountFavorites</systemdata>
+            <lineSpacing>1</lineSpacing>
+            <color>FFFFFF</color>
+        </text>-->
+        <text name="manufacturer">
+            <pos>0.5235 0.5475</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.16 0.09</size>
+            <horizontalAlignment>left</horizontalAlignment>
+            <verticalAlignment>top</verticalAlignment>
+            <text>${systemManufacturer}</text>
+            <lineSpacing>1</lineSpacing>
+            <fontPath>./huc.otf</fontPath>
+            <fontSize>0.075</fontSize>
+            <color>000000</color>
+        </text>
+        <text name="year">
+            <pos>0.5235 0.415</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.16 0.09</size>
+            <horizontalAlignment>left</horizontalAlignment>
+            <verticalAlignment>top</verticalAlignment>
+            <text>${systemReleaseYear}</text>
+            <lineSpacing>1</lineSpacing>
+            <fontPath>./huc.otf</fontPath>
+            <fontSize>0.1</fontSize>
+            <color>000000</color>
+        </text>
+        <text name="type">
+            <pos>0.5235 0.89</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.16 0.19</size>
+            <horizontalAlignment>left</horizontalAlignment>
+            <verticalAlignment>top</verticalAlignment>
+            <text>${systemHardwareType}</text>
+            <lineSpacing>1</lineSpacing>
+            <fontPath>./huc.otf</fontPath>
+            <fontSize>0.06</fontSize>
+            <color>000000</color>
+        </text>
+        <text name="fave">
+            <pos>0.5235 0.18</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.16 0.21</size>
+            <horizontalAlignment>left</horizontalAlignment>
+            <verticalAlignment>top</verticalAlignment>
+            <text>${langLabelFavorites}</text>
+            <lineSpacing>0.9</lineSpacing>
+            <fontPath>./huc.otf</fontPath>
+            <fontSize>0.075</fontSize>
+            <color>000000</color>
+        </text>
+        <text name="fave1">
+            <pos>0.8 0.07</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.36 0.06</size>
+            <horizontalAlignment>left</horizontalAlignment>
+            <verticalAlignment>center</verticalAlignment>
+            <metadata>name</metadata>
+            <gameselectorEntry>0</gameselectorEntry>
+            <lineSpacing>0.9</lineSpacing>
+            <fontPath>./huc.otf</fontPath>
+            <container>true</container>
+            <containerType>horizontal</containerType>
+            <fontSize>${fave}</fontSize>
+            <color>${color3}</color>
+        </text>
+        <text name="fave2">
+            <pos>0.8 0.13</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.36 0.06</size>
+            <horizontalAlignment>left</horizontalAlignment>
+            <verticalAlignment>center</verticalAlignment>
+            <metadata>name</metadata>
+            <gameselectorEntry>1</gameselectorEntry>
+            <lineSpacing>0.9</lineSpacing>
+            <fontPath>./huc.otf</fontPath>
+            <container>true</container>
+            <containerType>horizontal</containerType>
+            <fontSize>${fave}</fontSize>
+            <color>${color4}</color>
+        </text>
+        <text name="fave3">
+            <pos>0.8 0.19</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.36 0.06</size>
+            <horizontalAlignment>left</horizontalAlignment>
+            <verticalAlignment>center</verticalAlignment>
+            <metadata>name</metadata>
+            <gameselectorEntry>2</gameselectorEntry>
+            <lineSpacing>0.9</lineSpacing>
+            <fontPath>./huc.otf</fontPath>
+            <container>true</container>
+            <containerType>horizontal</containerType>
+            <fontSize>${fave}</fontSize>
+            <color>${color3}</color>
+        </text>
+        <text name="fave4">
+            <pos>0.8 0.25</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.36 0.06</size>
+            <horizontalAlignment>left</horizontalAlignment>
+            <verticalAlignment>center</verticalAlignment>
+            <metadata>name</metadata>
+            <gameselectorEntry>3</gameselectorEntry>
+            <lineSpacing>0.9</lineSpacing>
+            <fontPath>./huc.otf</fontPath>
+            <container>true</container>
+            <containerType>horizontal</containerType>
+            <fontSize>${fave}</fontSize>
+            <color>${color4}</color>
+        </text>
+        <image name="alt2">
+            <pos>0.5235 0.69</pos>
+            <origin>0.5 0.5</origin>
+            <maxSize>0.16 0.15</maxSize>
+            <origin>0.5 0.5</origin>
+            <path>./system/controller-outline/${system.theme}.svg</path>
+            <color>000000</color>
+            <zIndex>20</zIndex>
+        </image>
+    </view>
+    <view name="gamelist">
+        <gamelistinfo name="gamecount">
+            <pos>0.0175 0.98</pos>
+            <origin>0 0.5</origin>
+            <size>0.1375 0.03</size>
+            <horizontalAlignment>center</horizontalAlignment>
+            <verticalAlignment>top</verticalAlignment>
+            <color>${color2}</color>
+            <fontPath>./huc.otf</fontPath>
+            <fontSize>0.035</fontSize>
+            <zIndex>5</zIndex>
+        </gamelistinfo>
+        <image name="systemlogo3">
+            <pos>0.156 0.045</pos>
+            <origin>0.5 0.5</origin>
+            <maxSize>0.25 0.08</maxSize>
+            <path>./system/logos/system-logo-white/${system.theme}.svg</path>
+            <default>./system/custom/logo/${system.theme}.svg</default>
+            <color>${color3}</color>
+            <zIndex>8</zIndex>
+        </image>
+        <image name="background1">
+            <pos>-.01 0</pos>
+            <size>1.02 1</size>
+            <path>./lcars1.svg</path>
+            <color>${color1}</color>
+            <zIndex>3</zIndex>
+        </image>
+        <image name="background2">
+            <pos>-.01 0</pos>
+            <size>1.02 1</size>
+            <path>./lcars2.svg</path>
+            <color>${color2}</color>
+            <zIndex>3</zIndex>
+        </image>
+        <image name="background3">
+            <pos>-.01 0</pos>
+            <size>1.02 1</size>
+            <path>./lcars3.svg</path>
+            <color>${color3}</color>
+            <zIndex>3</zIndex>
+        </image>
+        <image name="background4">
+            <pos>-.01 0</pos>
+            <size>1.02 1</size>
+            <path>./lcars6.svg</path>
+            <color>${color4}</color>
+            <zIndex>3</zIndex>
+        </image>
+        
+        <image name="backgroundlayer">
+            <pos>0.3825 0</pos>
+            <size>0.625 1</size>
+            <path>./space.webp</path>
+            <color>000000</color>
+            <zIndex>2</zIndex>
+        </image>
+        <image name="cover">
+            <pos>0.5235 0.17</pos>
+            <origin>0.5 0.5</origin>
+            <maxSize>0.17 0.19</maxSize>
+            <imageType>cover</imageType>
+            <zIndex>14</zIndex>
+        </image>
+        <rating name="rating">
+            <pos>0.5235 0.51</pos>
+            <origin>0.5 0</origin>
+            <size>0.04 0.075</size>
+            <color>${color3}</color>
+            <filledPath>./starfleet.svg</filledPath>
+            <unfilledPath>./starfleetfill.svg</unfilledPath>
+            </rating>
+            <text name="genre">
+                <pos>0.83 0.025</pos>
+                <origin>0 0.5</origin>
+                <size>0.145 0.05</size>
+                <horizontalAlignment>center</horizontalAlignment>
+                <verticalAlignment>top</verticalAlignment>
+                <metadata>genre</metadata>
+                <defaultValue>:space:</defaultValue>
+                <lineSpacing>1</lineSpacing>
+                <fontPath>./huc.otf</fontPath>
+                <letterCase>lowercase</letterCase>
+                <fontSize>0.035</fontSize>
+                <color>${color2}</color>
+                <zIndex>50</zIndex>
+            </text>
+            <text name="players">
+                <pos>0.575 0.34</pos>
+                <origin>0.5 0.5</origin>
+                <size>0.15 0.1</size>
+                <metadata>players</metadata>
+                <horizontalAlignment>center</horizontalAlignment>
+                <verticalAlignment>center</verticalAlignment>
+                <lineSpacing>1</lineSpacing>
+                <fontPath>./huc.otf</fontPath>
+                <defaultValue>1</defaultValue>
+                <fontSize>0.11</fontSize>
+                <color>000000</color>
+            </text>
+        <video name="boxart">
+            <imageType>screenshot</imageType>
+            <pos>0.805 0.2275</pos>
+            <origin>0.5 0.5</origin>
+            <maxSize>0.38 0.35</maxSize>
+            <pillarboxes>false</pillarboxes>
+            <iterationCount>1</iterationCount>
+            <onIterationsDone>image</onIterationsDone>
+            <imageCornerRadius>0.025</imageCornerRadius>
+            <videoCornerRadius>0.025</videoCornerRadius>
+            <audio>false</audio>
+            <zIndex>13</zIndex>
+        </video>
+        <text name="description">
+            <pos>0.805 0.75</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.375 0.485</size>
+            <horizontalAlignment>center</horizontalAlignment>
+            <verticalAlignment>center</verticalAlignment>
+            <metadata>description</metadata>
+            <lineSpacing>1</lineSpacing>
+            <fontPath>./huc.otf</fontPath>
+            <fontSize>${sysdesc}</fontSize>
+            <color>${color2}</color>
+        </text>
+        <text name="developer">
+            <pos>0.5235 0.7075</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.16 0.14</size>
+            <horizontalAlignment>right</horizontalAlignment>
+            <verticalAlignment>bottom</verticalAlignment>
+            <metadata>developer</metadata>
+            <defaultValue>:space:</defaultValue>
+            <lineSpacing>1</lineSpacing>
+            <fontPath>./huc.otf</fontPath>
+            <fontSize>0.045</fontSize>
+            <color>000000</color>
+        </text>
+        <text name="developerlbl">
+            <pos>0.5235 0.6675</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.16 0.14</size>
+            <horizontalAlignment>left</horizontalAlignment>
+            <verticalAlignment>top</verticalAlignment>
+            <text>${langLabelDeveloper}:</text>
+            <lineSpacing>1</lineSpacing>
+            <fontPath>./huc.otf</fontPath>
+            <fontSize>0.045</fontSize>
+            <color>000000</color>
+        </text>
+        <text name="publisherlbl">
+            <pos>0.5235 0.855</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.16 0.14</size>
+            <horizontalAlignment>left</horizontalAlignment>
+            <verticalAlignment>top</verticalAlignment>
+            <text>${langLabelPublisher}:</text>
+            <lineSpacing>1</lineSpacing>
+            <fontPath>./huc.otf</fontPath>
+            <fontSize>0.045</fontSize>
+            <color>000000</color>
+        </text>
+        <text name="publisher">
+            <pos>0.5235 0.875</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.16 0.14</size>
+            <horizontalAlignment>right</horizontalAlignment>
+            <verticalAlignment>bottom</verticalAlignment>
+            <metadata>publisher</metadata>
+            <defaultValue>:space:</defaultValue>
+            <lineSpacing>1</lineSpacing>
+            <fontPath>./huc.otf</fontPath>
+            <fontSize>0.045</fontSize>
+            <color>000000</color>
+        </text>
+        <!--<text name="count">
+            <pos>0.4075 0.837</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.0475 0.155</size>
+            <horizontalAlignment>center</horizontalAlignment>
+            <verticalAlignment>center</verticalAlignment>
+            <text>Played
+
+
+Times</text>
+                <backgroundColor>${color2}</backgroundColor>
+            <lineSpacing>0.65</lineSpacing>
+            <fontPath>./huc.otf</fontPath>
+            <fontSize>0.045</fontSize>
+            <color>000000</color>
+        </text>
+        <text name="counter">
+            <pos>0.4075 0.84</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.0475 0.09</size>
+            <horizontalAlignment>center</horizontalAlignment>
+            <verticalAlignment>center</verticalAlignment>
+            <metadata>playcount</metadata>
+            <lineSpacing>1</lineSpacing>
+            <fontPath>./huc.otf</fontPath>
+            <fontSize>0.045</fontSize>
+            <color>000000</color>
+        </text>-->
+        <image name="box">
+            <size>0.0475 0.085</size>
+            <origin>0.5 0.5</origin>
+            <pos>0.4075 0.805</pos>
+            <path>./space.webp</path>
+            <color>${color2}</color>
+        </image>
+        <datetime name="syscountfav">
+            <pos>0.4075 0.72</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.0475 0.09</size>
+            <horizontalAlignment>center</horizontalAlignment>
+            <verticalAlignment>center</verticalAlignment>
+            <metadata>releasedate</metadata>
+            <defaultValue>:space:</defaultValue>
+            <format>%Y</format>
+            <lineSpacing>1</lineSpacing>
+            <fontPath>./huc.otf</fontPath>
+            <fontSize>0.06</fontSize>
+            <color>000000</color>
+        </datetime>
+        <badges name="badges-cont">
+            <pos>0.4075 0.1825</pos>
+            <size>0.0475 0.09</size>
+            <origin>0.5 0.5</origin>
+            <direction>row</direction>
+            <lines>1</lines>
+            <itemsPerLine>1</itemsPerLine>
+            <horizontalAlignment>center</horizontalAlignment>
+            <slots>controller</slots>
+            <controllerSize>0.6</controllerSize>
+            <controllerIconColor>000000</controllerIconColor>
+            <controllerPos>0.5 0.45</controllerPos>
+            <badgeIconColor>000000</badgeIconColor>
+            <customBadgeIcon badge="controller">./badges/back.svg</customBadgeIcon>
+            <zIndex>20</zIndex>
+        </badges>
+        <badges name="badges-fave">
+            <pos>0.4075 0.2625</pos>
+            <size>0.0475 0.09</size>
+            <origin>0.5 0.5</origin>
+            <direction>row</direction>
+            <lines>1</lines>
+            <itemsPerLine>1</itemsPerLine>
+            <horizontalAlignment>center</horizontalAlignment>
+            <slots>favorite</slots>
+            <badgeIconColor>000000</badgeIconColor>
+            <customBadgeIcon badge="favorite">./badges/fave.svg</customBadgeIcon>
+            <zIndex>20</zIndex>
+        </badges>
+        <badges name="badges-comp">
+            <pos>0.4075 0.3395</pos>
+            <size>0.0475 0.09</size>
+            <origin>0.5 0.5</origin>
+            <direction>row</direction>
+            <lines>1</lines>
+            <itemsPerLine>1</itemsPerLine>
+            <horizontalAlignment>center</horizontalAlignment>
+            <slots>completed</slots>
+            <badgeIconColor>000000</badgeIconColor>
+            <customBadgeIcon badge="completed">./badges/comp.svg</customBadgeIcon>
+            <zIndex>20</zIndex>
+        </badges>
+        <badges name="badges-man">
+            <pos>0.4075 0.418</pos>
+            <size>0.0475 0.09</size>
+            <origin>0.5 0.5</origin>
+            <direction>row</direction>
+            <lines>1</lines>
+            <itemsPerLine>1</itemsPerLine>
+            <horizontalAlignment>center</horizontalAlignment>
+            <slots>manual</slots>
+            <badgeIconColor>000000</badgeIconColor>
+            <customBadgeIcon badge="manual">./badges/manual.svg</customBadgeIcon>
+            <zIndex>20</zIndex>
+        </badges>
+        <badges name="badges-kidgame">
+            <pos>0.4075 0.496</pos>
+            <size>0.0475 0.09</size>
+            <origin>0.5 0.5</origin>
+            <direction>row</direction>
+            <lines>1</lines>
+            <itemsPerLine>1</itemsPerLine>
+            <horizontalAlignment>center</horizontalAlignment>
+            <slots>kidgame</slots>
+            <badgeIconColor>000000</badgeIconColor>
+            <customBadgeIcon badge="kidgame">./badges/kidgame.svg</customBadgeIcon>
+            <zIndex>20</zIndex>
+        </badges>
+        <badges name="badges-alt">
+            <pos>0.4075 0.575</pos>
+            <size>0.0475 0.09</size>
+            <origin>0.5 0.5</origin>
+            <direction>row</direction>
+            <lines>1</lines>
+            <itemsPerLine>1</itemsPerLine>
+            <horizontalAlignment>center</horizontalAlignment>
+            <slots>altemulator</slots>
+            <badgeIconColor>000000</badgeIconColor>
+            <customBadgeIcon badge="altemulator">./badges/alt.svg</customBadgeIcon>
+            <zIndex>20</zIndex>
+        </badges>
+        <badges name="badges-broken">
+            <pos>0.4075 0.654</pos>
+            <size>0.0475 0.09</size>
+            <origin>0.5 0.5</origin>
+            <direction>row</direction>
+            <lines>1</lines>
+            <itemsPerLine>1</itemsPerLine>
+            <horizontalAlignment>center</horizontalAlignment>
+            <slots>broken</slots>
+            <badgeIconColor>000000</badgeIconColor>
+            <customBadgeIcon badge="broken">./badges/broken.svg</customBadgeIcon>
+            <zIndex>20</zIndex>
+        </badges>
+       
+        <image name="alt2">
+            <pos>0.495 0.34</pos>
+            <origin>0.5 0.5</origin>
+            <maxSize>0.1 0.1</maxSize>
+            <origin>0.5 0.5</origin>
+            <path>./system/controller-outline/${system.theme}.svg</path>
+            <color>000000</color>
+            <zIndex>20</zIndex>
+        </image>
+        <text name="short">
+            <pos>0.98 0.4825</pos>
+            <origin>1 0.5</origin>
+            <size>0.09 0.05</size>
+            <horizontalAlignment>center</horizontalAlignment>
+            <verticalAlignment>top</verticalAlignment>
+            <metadata>sourceSystemName</metadata>
+            <lineSpacing>1</lineSpacing>
+            <fontPath>./huc.otf</fontPath>
+            <letterCase>lowercase</letterCase>
+            <fontSize>0.035</fontSize>
+            <color>${color2}</color>
+            <zIndex>5</zIndex>
+        </text>
+    </view>
+
+    <variant name="textlist">
+        <view name="system">
+            <textlist name="gamelist_textlist">
+                <pos>0.02 0.1025</pos>
+                <size>0.365 0.85</size>
+                <fontPath>./huc.otf</fontPath>
+                <fontSize>${textlist}</fontSize>
+                <lineSpacing>1.26</lineSpacing>
+                <selectedBackgroundColor>${color2}</selectedBackgroundColor>
+                <horizontalMargin>0</horizontalMargin>
+                <selectedBackgroundMargins>0.015 0.5</selectedBackgroundMargins>
+                <selectedColor>000000</selectedColor>
+                <primaryColor>${color3}</primaryColor>
+                <selectedBackgroundCornerRadius>0.0175</selectedBackgroundCornerRadius>
+                <secondaryColor>${color4}</secondaryColor>
+                <letterCase>capitalize</letterCase>
+                <systemNameSuffix>false</systemNameSuffix>
+                <zIndex>1</zIndex>
+            </textlist>
+        </view>
+        <view name="gamelist">
+            <textlist name="gamelist_textlist">
+                <pos>0.02 0.1025</pos>
+                <size>0.365 0.85</size>
+                <fontPath>./huc.otf</fontPath>
+                <fontSize>${textlist}</fontSize>
+                <lineSpacing>1.26</lineSpacing>
+                <selectedBackgroundColor>${color2}</selectedBackgroundColor>
+                <horizontalMargin>0</horizontalMargin>
+                <selectedBackgroundMargins>0.01 0.5</selectedBackgroundMargins>
+                <selectedColor>000000</selectedColor>
+                <selectorColor>00000000</selectorColor>
+                <primaryColor>${color3}</primaryColor>
+                <selectedBackgroundCornerRadius>0.0175</selectedBackgroundCornerRadius>
+                <secondaryColor>${color4}</secondaryColor>
+                <systemNameSuffix>false</systemNameSuffix>
+                <zIndex>1</zIndex>
+            </textlist>
+        </view>
+    </variant>
+    <variant name="grid">
+        <view name="system">
+ <grid name="system_grid">
+            <pos>0.0175 0.1075</pos>
+            <origin>0 0</origin>
+            <size>0.365 0.845</size>
+            <imageType>cover</imageType>
+            <itemScale>1</itemScale>
+            <scaleInwards>true</scaleInwards>
+            <imageRelativeScale>0.9</imageRelativeScale>
+            <staticImage>./system/logos/system-logo-white/${system.theme}.svg</staticImage>
+            <defaultImage>./system/custom/logo/${system.theme}.svg</defaultImage>
+            <imageColor>${text}</imageColor>
+            <backgroundColor>${color2}</backgroundColor>
+            <fractionalRows>false</fractionalRows>
+            <selectorLayer>middle</selectorLayer>
+            <itemSpacing>0.0025 0.005</itemSpacing>
+            <selectorColor>${color4}</selectorColor>
+            <itemSize>${grid}</itemSize>
+            <imageFit>fit</imageFit>
+            <text>${system.fullName}</text>
+            <rowTransitions>instant</rowTransitions>
+            <textRelativeScale>0.9</textRelativeScale>
+            <textColor>989898</textColor>
+            <zIndex>1</zIndex>
+        </grid>
+        </view>
+        <view name="gamelist">
+            <grid name="grid">
+            <pos>0.0175 0.1075</pos>
+            <origin>0 0</origin>
+            <size>0.365 0.845</size>
+            <imageType>cover</imageType>
+            <itemScale>1</itemScale>
+            <scaleInwards>true</scaleInwards>
+            <imageRelativeScale>0.9</imageRelativeScale>
+            <imageType>marquee</imageType>
+            <backgroundColor>${color2}</backgroundColor>
+            <fractionalRows>false</fractionalRows>
+            <selectorLayer>middle</selectorLayer>
+            <itemSpacing>0.0025 0.005</itemSpacing>
+            <selectorColor>${color4}</selectorColor>
+            <itemSize>${grid}</itemSize>
+            <imageFit>fit</imageFit>
+            <text>${system.fullName}</text>
+            <rowTransitions>instant</rowTransitions>
+            <fontSize>${sysdesc}</fontSize>
+            <fontPath>./huc.otf</fontPath>
+            <lineSpacing>0.8</lineSpacing>
+            <textRelativeScale>0.9</textRelativeScale>
+            <textColor>000000</textColor>
+            <zIndex>1</zIndex>
+        </grid>
+        </view>
+    </variant>
+    <!-- If you want to add custom sounds ucomment the next block and add your sounds at the paths indicated below -->
+    <view name="all">
+        <sound name="systembrowse">
+            <path>./scroll1.wav</path>
+        </sound>
+       <sound name="quicksysselect">
+            <path>./scroll.wav</path>
+        </sound>
+        <sound name="select">
+            <path>./scroll.wav</path>
+        </sound>
+        <sound name="back">
+            <path>./scroll.wav</path>
+        </sound>
+        <sound name="scroll">
+            <path>./scroll1.wav</path>
+        </sound>
+        <sound name="favorite">
+            <path>./fave.wav</path>
+        </sound>
+        <sound name="launch">
+            <path>./launch.wav</path>
+        </sound>
+    </view>
+</theme>
