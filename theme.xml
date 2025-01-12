@@ -10,8 +10,15 @@
     <aspectRatio name="4:3">
         <include>./4-3.xml</include>
     </aspectRatio>
-
-
+ <aspectRatio name="16:10">
+        <include>./16-10.xml</include>
+    </aspectRatio>
+    <aspectRatio name="19.5:9">
+        <include>./195-9.xml</include>
+    </aspectRatio>
+    <aspectRatio name="21:9">
+        <include>./21-9.xml</include>
+    </aspectRatio>
     <view name="system, gamelist">
         <image name="background">
             <pos>0 0</pos>

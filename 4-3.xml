@@ -10,7 +10,7 @@
                 <size>0.15 0.21</size>
                 <horizontalAlignment>left</horizontalAlignment>
                 <verticalAlignment>top</verticalAlignment>
-                <text>Favorite Games</text>
+                <text>${langLabelFavorites}</text>
                 <lineSpacing>0.9</lineSpacing>
                 <fontPath>./huc.otf</fontPath>
                 <fontSize>0.075</fontSize>
@@ -24,7 +24,7 @@
             <rating name="rating">
                 <pos>0.44 0.52</pos>
                 <origin>0 0</origin>
-                <size>0.165 0</size>
+                <size>0.1665 0</size>
                 <color>${color3}</color>
                 <filledPath>./starfleet.svg</filledPath>
                 <unfilledPath>./starfleetfill.svg</unfilledPath>
@@ -58,31 +58,38 @@
                 <color>000000</color>
             </datetime>
             <badges name="badges-cont">
-                <pos>0.4075 0.1875</pos>
+                <pos>0.408 0.1875</pos>
+                <size>0.047 0.09</size>
                 
             </badges>
             <badges name="badges-fave">
-                <pos>0.4075 0.2675</pos>
+                <pos>0.408 0.2675</pos>
+                <size>0.047 0.09</size>
              
             </badges>
             <badges name="badges-comp">
-                <pos>0.4075 0.3445</pos>
+                <pos>0.408 0.3445</pos>
+                <size>0.047 0.09</size>
                 
             </badges>
             <badges name="badges-man">
-                <pos>0.4075 0.423</pos>
+                <pos>0.408 0.423</pos>
+                <size>0.047 0.09</size>
                 
             </badges>
             <badges name="badges-kidgame">
-                <pos>0.4075 0.501</pos>
+                <pos>0.408 0.501</pos>
+                <size>0.047 0.09</size>
                
             </badges>
             <badges name="badges-alt">
-                <pos>0.4075 0.58</pos>
+                <pos>0.408 0.58</pos>
+                <size>0.047 0.09</size>
                 
             </badges>
             <badges name="badges-broken">
-                <pos>0.4075 0.659</pos>
+                <pos>0.408 0.659</pos>
+                <size>0.047 0.09</size>
                
             </badges>
         </view>    
@@ -96,7 +103,7 @@
                 <size>0.15 0.21</size>
                 <horizontalAlignment>left</horizontalAlignment>
                 <verticalAlignment>top</verticalAlignment>
-                <text>Favorite Games</text>
+                <text>${langLabelFavorites}</text>
                 <lineSpacing>0.9</lineSpacing>
                 <fontPath>./huc.otf</fontPath>
                 <fontSize>0.075</fontSize>
